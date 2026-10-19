@@ -136,12 +136,12 @@ public sealed partial class GameCanvas : Control
             Engine.Resume();
             return;
         }
-        Input.OnKeyDown(e.Key);
+        Input.OnKeyDown(e.Key, e.PhysicalKey);
     }
 
     protected override void OnKeyUp(KeyEventArgs e)
     {
-        Input.OnKeyUp(e.Key);
+        Input.OnKeyUp(e.Key, e.PhysicalKey);
         e.Handled = true;
     }
 
