@@ -22,7 +22,7 @@ public class HighScoreTable
     private readonly string _folder;
     private string TablePath => Path.Combine(_folder, "highscores.txt");
 
-    /// <summary>Where the table (and the player's own levels) are kept.</summary>
+    /// <summary>Where the table is kept.</summary>
     public string Folder => _folder;
 
     /// <summary>A table kept in <paramref name="folder"/> (the user's application-data folder by default).</summary>
